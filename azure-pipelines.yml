@@ -28,6 +28,6 @@ steps:
     connectedServiceNameARM: 'Pay-As-You-Go(efe6f822-b14e-443e-a09e-75d116511fad)'
     appType: 'functionAppLinux'
     appName: 'DeployAzureDevOps'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    package: '$(System.DefaultWorkingDirectory)/*.zip'
     runtimeStack: 'PYTHON|3.9'
     deploymentMethod: 'auto'
