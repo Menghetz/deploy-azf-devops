@@ -25,7 +25,7 @@ steps:
 
 - task: AzureFunctionApp@1
   inputs:
-    connectedServiceNameARM: 'Pay-As-You-Go(efe6f822-b14e-443e-a09e-75d116511fad)'
+    connectedServiceNameARM: 'efe6f822-b14e-443e-a09e-75d116511fad'
     appType: 'functionAppLinux'
     appName: 'DeployAzureDevOps'
     package: '$(System.DefaultWorkingDirectory)/*.zip'
