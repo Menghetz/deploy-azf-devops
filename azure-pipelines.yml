@@ -23,9 +23,9 @@ steps:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/build$(Build.BuildId).zip'
     artifactName: 'drop'
 
-- task: AzureFunctionApp@1
+- task: AzureFunctionApp@2
   inputs:
-    connectedServiceNameARM: 'efe6f822-b14e-443e-a09e-75d116511fad'
+    connectedServiceNameARM: 'Pay-As-You-Go(efe6f822-b14e-443e-a09e-75d116511fad)'
     appType: 'functionAppLinux'
     appName: 'DeployAzureDevOps'
     package: '$(System.DefaultWorkingDirectory)/*.zip'
