@@ -7,7 +7,6 @@ variables:
   appName: DeployAzureDevOps
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
-
 - task: AzureFunctionApp@1 # Add this at the end of your file
   inputs:
     azureSubscription: efe6f822-b14e-443e-a09e-75d116511fad
