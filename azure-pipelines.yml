@@ -7,4 +7,5 @@ trigger:
     appType: 'functionAppLinux'
     appName: 'DeployAzureDevOps'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    runtimeStack: 'PYTHON|3.9'
     deploymentMethod: 'auto'
