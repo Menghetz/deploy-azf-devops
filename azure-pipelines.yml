@@ -23,6 +23,10 @@ steps:
     PathtoPublish: '$(System.DefaultWorkingDirectory)/build$(Build.BuildId).zip'
     artifactName: 'drop'
 
+- task: Delay@1
+  inputs:
+    delayForMinutes: '2' # string. Required. Delay Time (minutes). Default: 0.
+
 - task: AzureFunctionApp@2
   inputs:
     connectedServiceNameARM: 'Pay-As-You-Go(efe6f822-b14e-443e-a09e-75d116511fad)'
